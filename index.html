@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <style>
+
+    body {
+      background-color: hsl(217, 54%, 11%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: "Outfit", sans-serif;
+      font-size: 9px;
+  }
+
+  .container{
+    
+    background-color: hsl(216, 50%, 16%);
+    max-width: 250px;
+    padding: 18px;
+    border-radius: 12px;
+    margin-top: 60px;
+    filter:  drop-shadow(16px 16px rgba(6, 10, 23, 0.622));
+    
+    
+
+}
+.imag{
+
+  
+    border-radius: 12px;
+    margin-bottom: 10px;
+
+
+}
+
+.card-hover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position:absolute;
+  background-color: hsla(178, 100%, 50%, 0.503);
+  margin: 18px;
+  top:0;
+  bottom: 0;
+  right:0;
+  left: 0;
+  width: 88%;
+  border-radius: 10px;
+  opacity: 0;
+  transition-duration: .7s;
+  
+}
+.card-hover:hover {
+  opacity: 1;
+  
+ 
+  
+}
+
+
+h1{
+  color: white;
+
+  
+}
+
+.p1{
+  color:rgba(199, 218, 252, 0.726);
+  font-size: small;
+}
+
+
+.textbox2{
+  display:flex;
+  flex-direction:row;
+   justify-content: space-between;
+   font-size:small;
+}
+
+.price{
+  color: aqua;
+
+  }
+  
+
+.countdown{
+  color:rgba(199, 218, 252, 0.726);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 6px;
+
+}
+.icon{
+  max-width: 12px;
+  margin-right: 5px;
+}
+
+
+.line {
+  
+  width: 100%;
+  background-color: hsl(215, 32%, 27%);
+  border: none;
+  height: 0.1px;
+  margin-top: 20px;
+}
+
+
+.textbox3{
+
+  display: flex;
+  justify-content: left;
+  padding-top: 15px;
+  color:rgba(199, 218, 252, 0.726);
+  font-size: small;
+}
+
+
+.avatar-img{
+  width: 30px;
+  height: 30px;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.id3{
+  color: white;
+}
+
+.id3:hover{
+  color: aqua;
+}
+
+
+
+
+h1:hover{
+  color:aqua;
+}
+  </style>
+
+
+</head>
+<body>
+
+  <div class="container">
+ 
+    <div class="img-card">
+  <div>
+      <img  src="images/image-equilibrium.jpg" width="100%" class="imag" class="card-hover"/>
+    </div>
+    <div>
+        <img  src="./images/icon-view.svg"   class="card-hover" />
+      </div>
+    
+    
+      
+    </div>
+
+    <div class="textbox1">
+      <h1>Equilibrium #3429</h1>
+      <p class="p1">Our Equilibrium collection promotes balance and calm.</p>
+    </div>
+
+    
+
+    <div class="textbox2">
+
+      <div class="price">
+        <img src="./images/icon-ethereum.svg" alt="" class="icon">
+        <a >0.041 ETH</a>
+      </div>
+
+      <div class="countdown">
+      <img src="./images/icon-clock.svg" alt="" class="icon">
+      <a>3 days left</a>
+      </div>
+      </div>
+
+      <hr class="line">
+
+      <div class="textbox3">
+        <img src="./images/image-avatar.png" alt="" class="avatar-img">
+        <p class="creator">Creation of <a class="id3"> Jules Wyvern</a></p>
+      </div>
+
+
+    </div>
+
+    
+
+  </div>
+
+
+
+ 
+
+
+</body>
+</html>
